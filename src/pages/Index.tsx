@@ -14,7 +14,7 @@ const kpiIcons = [
   <Target className="h-5 w-5" />,
 ];
 
-const kpiConfig = [
+const kpiConfig: Array<{ value: number; change: number; label: string; prefix?: string; suffix?: string }> = [
   { ...kpiMetrics.totalRevenue, prefix: "$" },
   { ...kpiMetrics.totalUsers },
   { ...kpiMetrics.avgOrderValue, prefix: "$" },
